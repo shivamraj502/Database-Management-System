@@ -1,0 +1,23 @@
+✅ Day 2 — DBMS Architecture
+
+Concepts
+
+3-Schema Architecture
+
+External
+
+Conceptual
+
+Internal
+
+Data Independence
+
+Logical
+
+Physical
+
+Practice
+
+Question:
+
+Difference between logical and physical data independence?

@@ -1,0 +1,15 @@
+Data vs Information
+
+File system problems
+
+What is DBMS
+
+Advantages of DBMS
+
+Applications of DBMS
+
+Practice
+
+Explain:
+
+Why DBMS is better than file system? Give 5 real examples.

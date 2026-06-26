@@ -1,0 +1,11 @@
+-- 🔁 Day 50 — Revision (Transactions)
+-- Practice mixed numerical problems.
+
+-- SQL order is:
+-- SELECT
+-- FROM
+-- JOIN
+-- WHERE
+-- GROUP BY
+-- HAVING
+-- ORDER BY
