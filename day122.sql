@@ -44,3 +44,4 @@ WHERE salary < (
 );
                                                 -- Mistakes
 -- how to find if a table having only one salary
+-- use distinct, limit and offset
