@@ -42,6 +42,26 @@ WHERE salary < (
     SELECT MAX(salary)
     FROM Employee
 );
+
+
+
+select (
+	select distinct salary
+    from Employee7
+    order by salary desc
+    limit 2 offset 1
+)as SecondHighestSalary;
+
+SELECT DISTINCT salary
+FROM Employee7
+ORDER BY salary DESC
+LIMIT 2 OFFSET 1;
+
                                                 -- Mistakes
 -- how to find if a table having only one salary
 -- use distinct, limit and offset
+
+-- If you want to print 2 values, don’t use scalar subquery:
+-- SELECT (subquery)
+-- Because that expects only 1 value.
+
