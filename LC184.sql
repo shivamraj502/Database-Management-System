@@ -30,21 +30,34 @@ SELECT * FROM Employee8;
 
 SELECT departmentId FROM Employee8;
 
-select d.name as Department,e.name as Employee,e.salary as Salary
+-- select d.name as Department,e.name as Employee,e.salary as Salary
+-- from Employee8 e
+-- left join Department d
+-- on e.dapartmentId = d.id
+-- group by e.departmentId
+-- having Salary = max(e.salary);
+
+-- SELECT d.name AS Department,
+--        e.name AS Employee8,
+--        e.salary AS Salary
+-- FROM Employee8 e
+-- Left JOIN Department d			-- left join or join both will work perfectly
+-- ON e.departmentId = d.id
+-- WHERE e.salary = (
+--     SELECT MAX(salary)
+--     FROM Employee8
+--     WHERE departmentId = e.departmentId
+-- );
+
+select d.name as Department, e.name as Employee8, e.salary as Salary
 from Employee8 e
 left join Department d
 on e.departmentId = d.id
-group by e.dapartmentId
-having Salary = max(e.salary);
+where e.salary = (
+	select max(salary)
+    from Employee8
+    where e.departmentId = departmentId 
+);
 
--- SELECT d.name AS Department,
---        e.name AS Employee,
---        e.salary AS Salary
--- FROM Employee e
--- JOIN Department d
--- ON e.departmentId = d.id
--- WHERE (e.departmentId, e.salary) IN (
---     SELECT departmentId, MAX(salary)
---     FROM Employee
---     GROUP BY departmentId
--- );
+-- Left side  → Inner query table
+-- Right side → Outer query table
